@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:gravity="center"
         android:padding="16dp"
+        android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/answer_buttons_container"
@@ -25,12 +25,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/navigate_button_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question_text_view">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.800">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -42,14 +42,14 @@
                 android:id="@+id/true_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="16dp"
                 android:text="@string/true_button" />
 
             <Button
                 android:id="@+id/false_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="16dp"
                 android:text="@string/false_button" />
         </LinearLayout>
 
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_margin="16dp"
             android:text="@string/cheat_button" />
 
     </LinearLayout>
@@ -68,13 +68,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/prev_button"
+            android:layout_margin="16dp"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -85,6 +85,7 @@
             app:iconPadding="0dp" />
 
         <Button
+            android:layout_margin="16dp"
             android:id="@+id/reset_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,6 +94,7 @@
 
         <Button
             android:id="@+id/next_button"
+            android:layout_margin="16dp"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
